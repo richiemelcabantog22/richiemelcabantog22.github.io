@@ -1,24 +1,854 @@
-<div class="card">
-    <h2>TransTrack</h2>
-    <p><strong>AI-Driven Smart Public Transport Tracker Application</strong></p>
-    <p>A real-time transport tracking system featuring live GPS location updates, crowd density monitoring, and AI insights for commuters and terminal management at VTX Terminal Exchange Alabang.</p>
-    
-    <div class="tags" style="margin-bottom: 15px;">
-        <span class="tag">Flutter</span>
-        <span class="tag">Dart</span>
-        <span class="tag">Node.js</span>
-        <span class="tag">MongoDB</span>
-        <span class="tag">Socket.io</span>
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Richiemel Cabantog — Full-Stack Developer &amp; IT Support</title>
+  <meta name="description" content="Portfolio of Richiemel Cabantog — a full-stack developer and IT support problem-solver from Muntinlupa City. Flutter apps, Node.js APIs, real-time platforms, and hands-on troubleshooting." />
+  <meta name="author" content="Richiemel Cabantog" />
+  <meta name="theme-color" content="#05060b" />
+
+  <!-- Open Graph -->
+  <meta property="og:type" content="website" />
+  <meta property="og:site_name" content="Richiemel Cabantog" />
+  <meta property="og:title" content="Richiemel Cabantog — Full-Stack Developer &amp; IT Support" />
+  <meta property="og:description" content="Flutter apps, Node.js APIs, real-time web platforms, and hands-on IT troubleshooting. Built from Muntinlupa City, Philippines." />
+  <meta property="og:url" content="https://richiemelcabantog22.github.io/" />
+  <meta property="og:image" content="https://richiemelcabantog22.github.io/assets/img/og-cover.jpg" />
+  <meta property="og:image:width" content="1200" />
+  <meta property="og:image:height" content="630" />
+  <meta property="og:image:alt" content="Richiemel Cabantog — full-stack developer and IT support, Muntinlupa City" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Richiemel Cabantog — Full-Stack Developer &amp; IT Support" />
+  <meta name="twitter:description" content="Flutter apps, Node.js APIs, real-time web platforms, and hands-on IT troubleshooting." />
+  <meta name="twitter:image" content="https://richiemelcabantog22.github.io/assets/img/og-cover.jpg" />
+  <link rel="canonical" href="https://richiemelcabantog22.github.io/" />
+
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='16' fill='%23090b14'/%3E%3Ctext x='50%25' y='55%25' text-anchor='middle' dominant-baseline='middle' font-family='Arial,sans-serif' font-size='24' font-weight='bold' fill='%237dd3fc'%3ERC%3C/text%3E%3C/svg%3E" />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=JetBrains+Mono:wght@400;500&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet" />
+
+  <link rel="stylesheet" href="assets/css/styles.css" />
+  <noscript>
+    <style>
+      [data-reveal] { opacity: 1 !important; transform: none !important; }
+    </style>
+  </noscript>
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    "name": "Richiemel Cabantog",
+    "jobTitle": "Full-Stack Developer",
+    "email": "mailto:cabantogrichiemel@gmail.com",
+    "url": "https://richiemelcabantog22.github.io/",
+    "image": "https://richiemelcabantog22.github.io/assets/img/profile.jpg",
+    "address": { "@type": "PostalAddress", "addressLocality": "Muntinlupa City", "addressCountry": "PH" },
+    "sameAs": [
+      "https://github.com/richiemelcabantog22",
+      "https://www.youtube.com/@chieCode"
+    ]
+  }
+  </script>
+</head>
+<body id="top">
+
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <!-- Decorative background -->
+  <div class="bg" aria-hidden="true">
+    <span class="blob blob-a"></span>
+    <span class="blob blob-b"></span>
+    <span class="blob blob-c"></span>
+    <span class="grain"></span>
+  </div>
+
+  <!-- SVG icon sprite -->
+  <svg class="sprite" aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg">
+    <symbol id="i-github" viewBox="0 0 24 24">
+      <path fill="currentColor" stroke="none" d="M12 .5C5.73.5.5 5.73.5 12c0 5.08 3.29 9.39 7.86 10.91.58.11.79-.25.79-.56v-2.17c-3.2.7-3.87-1.37-3.87-1.37-.52-1.33-1.28-1.68-1.28-1.68-1.05-.72.08-.7.08-.7 1.16.08 1.77 1.19 1.77 1.19 1.03 1.77 2.7 1.26 3.36.96.1-.75.4-1.26.73-1.55-2.55-.29-5.24-1.28-5.24-5.69 0-1.26.45-2.29 1.19-3.1-.12-.29-.52-1.46.11-3.05 0 0 .97-.31 3.18 1.18a11.1 11.1 0 0 1 5.79 0c2.2-1.49 3.17-1.18 3.17-1.18.63 1.59.23 2.76.11 3.05.74.81 1.19 1.84 1.19 3.1 0 4.42-2.69 5.39-5.25 5.68.41.35.78 1.05.78 2.12v3.14c0 .31.21.68.8.56A11.51 11.51 0 0 0 23.5 12C23.5 5.73 18.27.5 12 .5z"/>
+    </symbol>
+    <symbol id="i-youtube" viewBox="0 0 24 24">
+      <path fill="currentColor" stroke="none" d="M23.5 6.2a3 3 0 0 0-2.1-2.1C19.5 3.6 12 3.6 12 3.6s-7.5 0-9.4.5A3 3 0 0 0 .5 6.2 31 31 0 0 0 0 12a31 31 0 0 0 .5 5.8 3 3 0 0 0 2.1 2.1c1.9.5 9.4.5 9.4.5s7.5 0 9.4-.5a3 3 0 0 0 2.1-2.1A31 31 0 0 0 24 12a31 31 0 0 0-.5-5.8zM9.6 15.6V8.4L15.8 12l-6.2 3.6z"/>
+    </symbol>
+    <symbol id="i-mail" viewBox="0 0 24 24">
+      <rect x="2" y="4" width="20" height="16" rx="2"/>
+      <path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/>
+    </symbol>
+    <symbol id="i-arrow" viewBox="0 0 24 24">
+      <path d="M7 17 17 7"/><path d="M7 7h10v10"/>
+    </symbol>
+    <symbol id="i-play" viewBox="0 0 24 24">
+      <polygon points="6 3 20 12 6 21 6 3" fill="currentColor" stroke="none"/>
+    </symbol>
+    <symbol id="i-copy" viewBox="0 0 24 24">
+      <rect x="9" y="9" width="13" height="13" rx="2"/>
+      <path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"/>
+    </symbol>
+    <symbol id="i-code" viewBox="0 0 24 24">
+      <polyline points="16 18 22 12 16 6"/><polyline points="8 6 2 12 8 18"/>
+    </symbol>
+    <symbol id="i-mobile" viewBox="0 0 24 24">
+      <rect x="5" y="2" width="14" height="20" rx="2"/><path d="M12 18h.01"/>
+    </symbol>
+    <symbol id="i-database" viewBox="0 0 24 24">
+      <ellipse cx="12" cy="5" rx="9" ry="3"/>
+      <path d="M3 5v14a9 3 0 0 0 18 0V5"/><path d="M3 12a9 3 0 0 0 18 0"/>
+    </symbol>
+    <symbol id="i-globe" viewBox="0 0 24 24">
+      <circle cx="12" cy="12" r="10"/><path d="M2 12h20"/>
+      <path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/>
+    </symbol>
+    <symbol id="i-spark" viewBox="0 0 24 24">
+      <path d="m12 3-1.9 5.8a2 2 0 0 1-1.3 1.3L3 12l5.8 1.9a2 2 0 0 1 1.3 1.3L12 21l1.9-5.8a2 2 0 0 1 1.3-1.3L21 12l-5.8-1.9a2 2 0 0 1-1.3-1.3z"/>
+    </symbol>
+    <symbol id="i-pin" viewBox="0 0 24 24">
+      <path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0"/><circle cx="12" cy="10" r="3"/>
+    </symbol>
+    <symbol id="i-check" viewBox="0 0 24 24"><path d="M20 6 9 17l-5-5"/></symbol>
+    <symbol id="i-arrow-down" viewBox="0 0 24 24">
+      <path d="M12 5v14"/><path d="m19 12-7 7-7-7"/>
+    </symbol>
+    <symbol id="i-book" viewBox="0 0 24 24">
+      <path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"/>
+      <path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"/>
+    </symbol>
+    <symbol id="i-eye" viewBox="0 0 24 24">
+      <path d="M2 12s3.5-7 10-7 10 7 10 7-3.5 7-10 7-10-7-10-7z"/><circle cx="12" cy="12" r="3"/>
+    </symbol>
+    <symbol id="i-map" viewBox="0 0 24 24">
+      <path d="m3 6 6-3 6 3 6-3v15l-6 3-6-3-6 3z"/><path d="M9 3v15"/><path d="M15 6v15"/>
+    </symbol>
+    <symbol id="i-server" viewBox="0 0 24 24">
+      <rect x="2" y="3" width="20" height="8" rx="2"/><rect x="2" y="13" width="20" height="8" rx="2"/>
+      <path d="M6 7h.01"/><path d="M6 17h.01"/>
+    </symbol>
+    <symbol id="i-bus" viewBox="0 0 24 24">
+      <rect x="3" y="3" width="18" height="15" rx="3"/><path d="M3 9h18"/>
+      <path d="M7 18v3"/><path d="M17 18v3"/><circle cx="7.5" cy="14.5" r=".5"/><circle cx="16.5" cy="14.5" r=".5"/>
+    </symbol>
+    <symbol id="i-laptop" viewBox="0 0 24 24">
+      <rect x="3" y="4" width="18" height="12" rx="2"/><path d="M2 20h20"/>
+    </symbol>
+    <symbol id="i-x" viewBox="0 0 24 24">
+      <path d="M18 6 6 18"/><path d="m6 6 12 12"/>
+    </symbol>
+  </svg>
+
+  <div class="scroll-progress" aria-hidden="true"><span></span></div>
+
+  <header class="site-header">
+    <nav class="nav container" aria-label="Main navigation">
+      <a class="brand" href="#top" aria-label="Richiemel Cabantog — home">
+        <span class="brand-mark" aria-hidden="true">RC</span>
+        <span class="brand-name">richiemel<span class="brand-dot">.</span></span>
+      </a>
+
+      <ul class="nav-links">
+        <li><a href="#about">About</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#screens">Screens</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+
+      <div class="nav-actions">
+        <a class="btn btn-ghost btn-sm nav-cta" href="#contact">
+          Let's talk <svg class="icon"><use href="#i-arrow"/></svg>
+        </a>
+        <button class="nav-toggle" type="button" aria-label="Open menu" aria-expanded="false" aria-controls="mobile-menu">
+          <span></span><span></span>
+        </button>
+      </div>
+    </nav>
+
+    <div class="mobile-panel" id="mobile-menu">
+      <ul>
+        <li><a href="#about">About</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#screens">Screens</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+      <div class="mobile-socials">
+        <a href="https://github.com/richiemelcabantog22" target="_blank" rel="noopener">GitHub</a>
+        <a href="https://www.youtube.com/@chieCode" target="_blank" rel="noopener">YouTube</a>
+        <a href="mailto:cabantogrichiemel@gmail.com">Email</a>
+      </div>
+    </div>
+  </header>
+
+  <main id="main">
+
+    <!-- ================= HERO ================= -->
+    <section class="hero" aria-labelledby="hero-title">
+      <div class="container hero-grid">
+        <div class="hero-copy">
+          <p class="eyebrow pill">
+            <span class="dot-live" aria-hidden="true"></span>
+            <span class="pill-full">Open to full-stack, mobile &amp; IT support roles</span>
+            <span class="pill-short">Open to work</span>
+          </p>
+
+          <h1 id="hero-title">
+            <span class="line">Richiemel</span>
+            <span class="line grad">Cabantog<span class="period">.</span></span>
+          </h1>
+
+          <p class="role-line">
+            <span class="role-prefix" aria-hidden="true">// </span>
+            <span id="role-text">Full-Stack Developer</span><span class="caret" aria-hidden="true"></span>
+          </p>
+
+          <p class="hero-desc">
+            Fresh graduate from Muntinlupa City who builds cross-platform mobile apps and
+            real-time web platforms end to end — and brings the same troubleshooting
+            mindset to hardware, software, and IT support.
+          </p>
+
+          <div class="hero-actions">
+            <a class="btn btn-primary" href="#projects">
+              Explore my work <svg class="icon"><use href="#i-arrow-down"/></svg>
+            </a>
+            <a class="btn btn-ghost" href="#contact">Get in touch</a>
+          </div>
+
+          <div class="hero-socials">
+            <a class="social" href="https://github.com/richiemelcabantog22" target="_blank" rel="noopener" aria-label="GitHub profile">
+              <svg class="icon"><use href="#i-github"/></svg>
+            </a>
+            <a class="social" href="https://www.youtube.com/@chieCode" target="_blank" rel="noopener" aria-label="YouTube channel">
+              <svg class="icon"><use href="#i-youtube"/></svg>
+            </a>
+            <a class="social" href="mailto:cabantogrichiemel@gmail.com" aria-label="Send an email">
+              <svg class="icon"><use href="#i-mail"/></svg>
+            </a>
+            <span class="social-note">Muntinlupa City, PH</span>
+          </div>
+        </div>
+
+        <div class="hero-visual">
+          <div class="terminal">
+            <div class="terminal-bar">
+              <span class="t-dot t-red"></span>
+              <span class="t-dot t-yellow"></span>
+              <span class="t-dot t-green"></span>
+              <span class="terminal-title">richiemel — profile</span>
+            </div>
+            <pre class="terminal-body"><code><span class="t-prompt">$</span> <span class="t-cmd">whoami</span>
+<span class="t-out">full-stack developer · fresh graduate</span>
+
+<span class="t-prompt">$</span> <span class="t-cmd">cat</span> <span class="t-file">stack.json</span>
+<span class="t-brace">{</span>
+  <span class="t-key">"mobile"</span>: <span class="t-str">"Flutter · Dart"</span>,
+  <span class="t-key">"web"</span>: <span class="t-str">"Node.js · Express"</span>,
+  <span class="t-key">"data"</span>: <span class="t-str">"MongoDB · Hive"</span>,
+  <span class="t-key">"realtime"</span>: <span class="t-str">"Socket.IO"</span>,
+  <span class="t-key">"status"</span>: <span class="t-str">"open to work"</span>
+<span class="t-brace">}</span>
+
+<span class="t-prompt">$</span> <span class="t-cmd">npm run</span> build:future<span class="caret"></span></code></pre>
+          </div>
+
+          <span class="float-chip chip-a" aria-hidden="true">
+            <svg class="icon"><use href="#i-mobile"/></svg> Flutter
+          </span>
+          <span class="float-chip chip-b" aria-hidden="true">
+            <svg class="icon"><use href="#i-database"/></svg> MongoDB
+          </span>
+          <span class="float-chip chip-c" aria-hidden="true">
+            <svg class="icon"><use href="#i-spark"/></svg> Realtime
+          </span>
+        </div>
+      </div>
+
+      <div class="container">
+        <dl class="stats">
+          <div>
+            <dt><span class="count">06</span></dt>
+            <dd>Featured builds</dd>
+          </div>
+          <div>
+            <dt>03</dt>
+            <dd>Platforms covered</dd>
+          </div>
+          <div>
+            <dt>15<span class="plus">+</span></dt>
+            <dd>Tools in the stack</dd>
+          </div>
+        </dl>
+      </div>
+    </section>
+
+    <!-- ================= MARQUEE ================= -->
+    <div class="marquee" aria-label="Technologies I work with">
+      <div class="marquee-track">
+        <span>Flutter</span><i aria-hidden="true">✦</i>
+        <span>Dart</span><i aria-hidden="true">✦</i>
+        <span>Node.js</span><i aria-hidden="true">✦</i>
+        <span>Express</span><i aria-hidden="true">✦</i>
+        <span>MongoDB</span><i aria-hidden="true">✦</i>
+        <span>Socket.IO</span><i aria-hidden="true">✦</i>
+        <span>JavaScript</span><i aria-hidden="true">✦</i>
+        <span>Hive</span><i aria-hidden="true">✦</i>
+        <span>REST APIs</span><i aria-hidden="true">✦</i>
+        <span>JWT</span><i aria-hidden="true">✦</i>
+        <span>Cloudinary</span><i aria-hidden="true">✦</i>
+        <span>Leaflet</span><i aria-hidden="true">✦</i>
+        <span>Git</span><i aria-hidden="true">✦</i>
+        <span>GitHub</span><i aria-hidden="true">✦</i>
+        <span>Flutter</span><i aria-hidden="true">✦</i>
+        <span>Dart</span><i aria-hidden="true">✦</i>
+        <span>Node.js</span><i aria-hidden="true">✦</i>
+        <span>Express</span><i aria-hidden="true">✦</i>
+        <span>MongoDB</span><i aria-hidden="true">✦</i>
+        <span>Socket.IO</span><i aria-hidden="true">✦</i>
+        <span>JavaScript</span><i aria-hidden="true">✦</i>
+        <span>Hive</span><i aria-hidden="true">✦</i>
+        <span>REST APIs</span><i aria-hidden="true">✦</i>
+        <span>JWT</span><i aria-hidden="true">✦</i>
+        <span>Cloudinary</span><i aria-hidden="true">✦</i>
+        <span>Leaflet</span><i aria-hidden="true">✦</i>
+        <span>Git</span><i aria-hidden="true">✦</i>
+        <span>GitHub</span><i aria-hidden="true">✦</i>
+      </div>
     </div>
 
-    <!-- Embedded YouTube Video Demo -->
-    <div class="video-container">
-        <iframe src="https://www.youtube.com/watch?v=7KeBfbHt4-Y" title="TransTrack Demo" allowfullscreen></iframe>
-    </div>
+    <!-- ================= ABOUT ================= -->
+    <section class="section about" id="about" aria-labelledby="about-title">
+      <div class="container about-grid">
+        <div class="about-visual" data-reveal>
+          <div class="portrait">
+            <img src="assets/img/profile.jpg" alt="Richiemel Cabantog in graduation attire" width="800" height="1000" loading="lazy" decoding="async" />
+            <span class="portrait-badge"><span class="dot-live" aria-hidden="true"></span> Open to work</span>
+            <div class="portrait-card">
+              <strong>Richiemel Cabantog</strong>
+              <span>Full-Stack Developer</span>
+            </div>
+          </div>
 
-    <!-- Action Buttons -->
-    <div style="display: flex; gap: 10px; margin-top: 15px;">
-        <a href="https://github.com/richiemelcabantog22/transtrack" target="_blank" class="btn">💻 View Source Code on GitHub</a>
-        <a href="https://youtu.be/7KeBfbHt4-Y" target="_blank" class="btn" style="background: #16a34a;">🎥 Watch on YouTube</a>
+          <dl class="quick-facts">
+            <div><dt>Location</dt><dd>Muntinlupa City, PH</dd></div>
+            <div><dt>Focus</dt><dd>Full-stack &amp; mobile</dd></div>
+            <div><dt>Status</dt><dd>Fresh graduate · available</dd></div>
+          </dl>
+        </div>
+
+        <div class="about-copy" data-reveal>
+          <p class="eyebrow">About me</p>
+          <h2 id="about-title">I turn ideas into software that <span class="grad">actually runs</span>.</h2>
+
+          <p class="lead">
+            I'm a full-stack developer who likes taking a feature from a rough idea to a
+            working build — no hand-offs, no loose ends.
+          </p>
+
+          <p>
+            Most of my work lives at the intersection of mobile and realtime data:
+            Flutter apps with offline storage, Node.js and Express APIs, MongoDB models,
+            and Socket.IO channels that keep everything in sync. I've built a smart
+            transport tracker, an AR folklore app, an on-device drowsiness detector, and a
+            community portal with live incident mapping.
+          </p>
+
+          <p>
+            I also work with AI-assisted tooling as part of my development workflow. It
+            helps me move faster and explore solutions — but every line still gets
+            reviewed, tested, and debugged before it ships. Troubleshooting is the part I
+            enjoy most.
+          </p>
+
+          <ul class="strength-chips" aria-label="Strengths">
+            <li>End-to-end delivery</li>
+            <li>Realtime systems</li>
+            <li>Mobile-first UI</li>
+            <li>API design</li>
+            <li>Debugging</li>
+            <li>AI-assisted workflow</li>
+          </ul>
+
+          <aside class="support-note">
+            <span class="support-icon" aria-hidden="true">
+              <svg class="icon"><use href="#i-laptop"/></svg>
+            </span>
+            <div>
+              <strong>Also comfortable in IT support</strong>
+              <p>
+                Hardware diagnostics, OS and driver setup, basic networking, and patient
+                troubleshooting — the same debugging mindset, applied to machines and to
+                the people using them.
+              </p>
+            </div>
+          </aside>
+
+          <blockquote class="quote">
+            “Build it, test it, break it, fix it — then ship it.”
+          </blockquote>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= PROJECTS ================= -->
+    <section class="section projects" id="projects" aria-labelledby="projects-title">
+      <div class="container">
+        <div class="section-head" data-reveal>
+          <p class="eyebrow">Selected work</p>
+          <h2 id="projects-title">Things I've <span class="grad">built</span>.</h2>
+          <p>
+            Six projects across mobile, web, and backend — including a working demo of my
+            flagship transport app.
+          </p>
+        </div>
+
+        <!-- Featured project -->
+        <article class="featured" data-reveal>
+          <div class="featured-media">
+            <div class="video-frame" data-video-id="7KeBfbHt4-Y">
+              <img
+                src="assets/img/transtrack-cover.svg"
+                alt="TransTrack demo cover — AI-driven smart public transport tracker"
+                width="1280" height="720" loading="lazy" decoding="async"
+              />
+              <button class="video-play" type="button" aria-label="Play the TransTrack demo video">
+                <svg class="icon"><use href="#i-play"/></svg>
+              </button>
+              <span class="video-chip"><span class="dot-live" aria-hidden="true"></span> TransTrack Demo</span>
+            </div>
+            <p class="video-caption">Working build · recorded demo</p>
+          </div>
+
+          <div class="featured-body">
+            <div class="badges">
+              <span class="badge badge-accent">Flagship</span>
+              <span class="badge">Mobile · Realtime · AI</span>
+            </div>
+
+            <h3>TransTrack<span class="accent">.</span></h3>
+            <p class="project-sub">AI-driven smart public transport tracker</p>
+
+            <p>
+              A real-time transport tracking system for commuters and terminal management
+              at VTX Terminal Exchange, Alabang. Live vehicle locations, crowd-density
+              reporting, and AI-assisted insights that help people decide when to move.
+            </p>
+
+            <ul class="feature-list">
+              <li>Live GPS updates and crowd-density monitoring over Socket.IO</li>
+              <li>AI insights and headway analytics for routes and arrivals</li>
+              <li>JWT-secured driver accounts, PIN recovery, and an AdminJS dashboard</li>
+            </ul>
+
+            <div class="tags">
+              <span>Flutter</span><span>Dart</span><span>Node.js</span>
+              <span>MongoDB</span><span>Socket.IO</span><span>JWT</span>
+            </div>
+
+            <div class="project-actions">
+              <a class="btn btn-primary" href="https://youtu.be/7KeBfbHt4-Y" target="_blank" rel="noopener">
+                <svg class="icon"><use href="#i-youtube"/></svg> Watch demo
+              </a>
+              <a class="btn btn-ghost" href="https://github.com/richiemelcabantog22/bus-tracking-backend" target="_blank" rel="noopener">
+                <svg class="icon"><use href="#i-github"/></svg> Backend repo
+              </a>
+            </div>
+
+            <p class="project-note">
+              The mobile source is kept private, but the backend is public and the video
+              above shows the working app.
+            </p>
+          </div>
+        </article>
+
+        <!-- Filters -->
+        <div class="filters" role="group" aria-label="Filter projects by category" data-reveal>
+          <button class="filter is-active" type="button" data-filter="all" aria-pressed="true">All <span>05</span></button>
+          <button class="filter" type="button" data-filter="mobile" aria-pressed="false">Mobile <span>02</span></button>
+          <button class="filter" type="button" data-filter="web" aria-pressed="false">Web <span>02</span></button>
+          <button class="filter" type="button" data-filter="backend" aria-pressed="false">Backend <span>01</span></button>
+        </div>
+
+        <!-- Project grid -->
+        <div class="projects-grid" id="project-grid">
+
+          <article class="project-card tone-violet" data-category="mobile" data-reveal>
+            <div class="card-banner">
+              <svg class="card-glyph"><use href="#i-book"/></svg>
+              <span class="card-tag">Mobile</span>
+            </div>
+            <div class="card-body">
+              <h3>PAMANA</h3>
+              <p class="project-sub">Philippine folklore, rebuilt for mobile</p>
+              <p>
+                An offline-first Flutter app preserving myths and legends with region-based
+                stories, quizzes, unlockable badges, and 3D/AR creature exploration.
+              </p>
+              <div class="tags">
+                <span>Flutter</span><span>Dart</span><span>Hive</span><span>AR/3D</span><span>Material 3</span>
+              </div>
+            </div>
+            <div class="card-links">
+              <a href="https://github.com/richiemelcabantog22/Mobile-Development-Apps/tree/main/PAMANA-APP" target="_blank" rel="noopener">
+                View code <svg class="icon"><use href="#i-arrow"/></svg>
+              </a>
+            </div>
+          </article>
+
+          <article class="project-card tone-green" data-category="mobile" data-reveal>
+            <div class="card-banner">
+              <svg class="card-glyph"><use href="#i-eye"/></svg>
+              <span class="card-tag">Mobile · AI</span>
+            </div>
+            <div class="card-body">
+              <h3>SAFETY-APP</h3>
+              <p class="project-sub">On-device driver drowsiness detection</p>
+              <p>
+                A computer-vision app that tracks eye and mouth metrics, blink rate, and
+                head pose in real time — then fires alerts before fatigue becomes a risk.
+              </p>
+              <div class="tags">
+                <span>Flutter</span><span>ML Kit</span><span>Computer Vision</span><span>Hive</span>
+              </div>
+            </div>
+            <div class="card-links">
+              <a href="https://github.com/richiemelcabantog22/Mobile-Development-Apps/tree/main/SAFETY-APP" target="_blank" rel="noopener">
+                View code <svg class="icon"><use href="#i-arrow"/></svg>
+              </a>
+            </div>
+          </article>
+
+          <article class="project-card tone-cyan" data-category="web" data-reveal>
+            <div class="card-banner">
+              <svg class="card-glyph"><use href="#i-map"/></svg>
+              <span class="card-tag">Web · Realtime</span>
+            </div>
+            <div class="card-body">
+              <h3>Tunasan Portal</h3>
+              <p class="project-sub">Smart barangay information platform</p>
+              <p>
+                A community hub for news, events, and geo-tagged incident reports — with
+                evidence uploads, admin moderation, live maps, QR access, and push alerts.
+              </p>
+              <div class="tags">
+                <span>Node.js</span><span>Express</span><span>MongoDB</span><span>Socket.IO</span><span>Leaflet</span><span>Cloudinary</span>
+              </div>
+            </div>
+            <div class="card-links">
+              <a href="https://github.com/richiemelcabantog22/Web-Portal" target="_blank" rel="noopener">
+                View code <svg class="icon"><use href="#i-arrow"/></svg>
+              </a>
+            </div>
+          </article>
+
+          <article class="project-card tone-amber" data-category="backend" data-reveal>
+            <div class="card-banner">
+              <svg class="card-glyph"><use href="#i-server"/></svg>
+              <span class="card-tag">Backend</span>
+            </div>
+            <div class="card-body">
+              <h3>TransTrack API</h3>
+              <p class="project-sub">Realtime transport backend</p>
+              <p>
+                The engine behind TransTrack: Express routes, MongoDB models for buses,
+                drivers and incidents, JWT auth, headway analytics, and live Socket.IO events.
+              </p>
+              <div class="tags">
+                <span>Node.js</span><span>Express</span><span>MongoDB</span><span>Socket.IO</span><span>AdminJS</span>
+              </div>
+            </div>
+            <div class="card-links">
+              <a href="https://github.com/richiemelcabantog22/bus-tracking-backend" target="_blank" rel="noopener">
+                View code <svg class="icon"><use href="#i-arrow"/></svg>
+              </a>
+            </div>
+          </article>
+
+          <article class="project-card tone-pink" data-category="web" data-reveal>
+            <div class="card-banner">
+              <svg class="card-glyph"><use href="#i-laptop"/></svg>
+              <span class="card-tag">Web</span>
+            </div>
+            <div class="card-body">
+              <h3>Portfolio v2</h3>
+              <p class="project-sub">This site, hand-coded</p>
+              <p>
+                A zero-dependency single-page portfolio built with semantic HTML, modern
+                CSS, and vanilla JS — animated, responsive, and tuned to load fast.
+              </p>
+              <div class="tags">
+                <span>HTML5</span><span>CSS3</span><span>JavaScript</span><span>GitHub Pages</span>
+              </div>
+            </div>
+            <div class="card-links">
+              <a href="https://github.com/richiemelcabantog22/richiemelcabantog22.github.io" target="_blank" rel="noopener">
+                View code <svg class="icon"><use href="#i-arrow"/></svg>
+              </a>
+            </div>
+          </article>
+
+        </div>
+
+        <div class="projects-foot" data-reveal>
+          <p>More experiments and coursework live on GitHub.</p>
+          <a class="btn btn-ghost" href="https://github.com/richiemelcabantog22?tab=repositories" target="_blank" rel="noopener">
+            <svg class="icon"><use href="#i-github"/></svg> All repositories
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= SCREENS ================= -->
+    <section class="section screens" id="screens" aria-labelledby="screens-title">
+      <div class="container">
+        <div class="section-head" data-reveal>
+          <p class="eyebrow">Inside the builds</p>
+          <h2 id="screens-title">Real screens, <span class="grad">not mockups</span>.</h2>
+          <p>
+            Captured on device from PAMANA and the Driver Safety app, plus the barangay
+            portal running in the browser.
+          </p>
+        </div>
+
+        <div class="screens-grid">
+          <figure class="phone-shot" data-reveal>
+            <div class="phone-frame">
+              <img src="assets/img/projects/pamana-home.jpg" alt="PAMANA home screen showing the Tikbalang as creature of the day" width="720" height="1495" loading="lazy" decoding="async" />
+            </div>
+            <figcaption><strong>PAMANA</strong><span>Creature of the day</span></figcaption>
+          </figure>
+
+          <figure class="phone-shot" data-reveal>
+            <div class="phone-frame">
+              <img src="assets/img/projects/pamana-3d.jpg" alt="PAMANA 3D viewer showing the Bata Mama character" width="720" height="1495" loading="lazy" decoding="async" />
+            </div>
+            <figcaption><strong>PAMANA</strong><span>3D creature viewer</span></figcaption>
+          </figure>
+
+          <figure class="phone-shot" data-reveal>
+            <div class="phone-frame">
+              <img src="assets/img/projects/pamana-quiz.jpg" alt="PAMANA mythology quiz screen with a Luzon question" width="720" height="1495" loading="lazy" decoding="async" />
+            </div>
+            <figcaption><strong>PAMANA</strong><span>Mythology quiz</span></figcaption>
+          </figure>
+
+          <figure class="phone-shot" data-reveal>
+            <div class="phone-frame">
+              <img src="assets/img/projects/safety-dashboard.jpg" alt="Driver Safety app dashboard with readiness score and monitor button" width="720" height="1495" loading="lazy" decoding="async" />
+            </div>
+            <figcaption><strong>Driver Safety</strong><span>Monitoring dashboard</span></figcaption>
+          </figure>
+
+          <figure class="phone-shot" data-reveal>
+            <div class="phone-frame">
+              <img src="assets/img/projects/safety-monitoring.jpg" alt="Driver Safety live monitoring screen with camera preview and attention ring" width="720" height="1495" loading="lazy" decoding="async" />
+            </div>
+            <figcaption><strong>Driver Safety</strong><span>Live monitoring</span></figcaption>
+          </figure>
+
+          <figure class="phone-shot" data-reveal>
+            <div class="phone-frame">
+              <img src="assets/img/projects/safety-history.jpg" alt="Driver Safety event history with drowsiness records" width="720" height="1495" loading="lazy" decoding="async" />
+            </div>
+            <figcaption><strong>Driver Safety</strong><span>Event history</span></figcaption>
+          </figure>
+
+          <figure class="screen-web" data-reveal>
+            <div class="browser-frame">
+              <div class="browser-bar" aria-hidden="true">
+                <span></span><span></span><span></span>
+                <em>Barangay Tunasan · community portal</em>
+              </div>
+              <img src="assets/img/projects/portal-home.jpg" alt="Smart Barangay Tunasan portal home page with QR code access" width="1000" height="462" loading="lazy" decoding="async" />
+            </div>
+            <figcaption><strong>Tunasan Portal</strong><span>Public home page with QR access</span></figcaption>
+          </figure>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= SKILLS ================= -->
+    <section class="section skills" id="skills" aria-labelledby="skills-title">
+      <div class="container">
+        <div class="section-head" data-reveal>
+          <p class="eyebrow">Toolkit</p>
+          <h2 id="skills-title">What I build <span class="grad">with</span>.</h2>
+          <p>
+            A pragmatic stack I've used to ship real projects — plus the hands-on IT
+            support side that keeps everything running.
+          </p>
+        </div>
+
+        <div class="skills-grid">
+          <article class="skill-card" data-reveal>
+            <span class="skill-icon"><svg class="icon"><use href="#i-mobile"/></svg></span>
+            <h3>Mobile</h3>
+            <p>Cross-platform apps with reactive state and offline-first storage.</p>
+            <div class="tags">
+              <span>Flutter</span><span>Dart</span><span>Hive</span>
+              <span>Material 3</span><span>ML Kit</span><span>AR/3D</span>
+            </div>
+          </article>
+
+          <article class="skill-card" data-reveal>
+            <span class="skill-icon"><svg class="icon"><use href="#i-globe"/></svg></span>
+            <h3>Frontend</h3>
+            <p>Responsive interfaces, interactive maps, and real-time updates.</p>
+            <div class="tags">
+              <span>HTML5</span><span>CSS3</span><span>JavaScript</span>
+              <span>Leaflet</span><span>Web Push</span><span>Responsive UI</span>
+            </div>
+          </article>
+
+          <article class="skill-card" data-reveal>
+            <span class="skill-icon"><svg class="icon"><use href="#i-database"/></svg></span>
+            <h3>Backend</h3>
+            <p>REST APIs, authentication, data models, and live event channels.</p>
+            <div class="tags">
+              <span>Node.js</span><span>Express</span><span>MongoDB</span>
+              <span>Mongoose</span><span>Socket.IO</span><span>JWT</span>
+            </div>
+          </article>
+
+          <article class="skill-card" data-reveal>
+            <span class="skill-icon"><svg class="icon"><use href="#i-laptop"/></svg></span>
+            <h3>IT Support</h3>
+            <p>Hands-on diagnostics and fixes for desktops, laptops, phones, and small networks.</p>
+            <div class="tags">
+              <span>Hardware diagnostics</span><span>OS &amp; drivers</span>
+              <span>Basic networking</span><span>Device setup</span>
+              <span>End-user support</span><span>Troubleshooting</span>
+            </div>
+          </article>
+
+          <article class="skill-card" data-reveal>
+            <span class="skill-icon"><svg class="icon"><use href="#i-code"/></svg></span>
+            <h3>Tools</h3>
+            <p>The editors, platforms, and admin tooling I use every day.</p>
+            <div class="tags">
+              <span>Git</span><span>GitHub</span><span>VS Code</span>
+              <span>Android Studio</span><span>AdminJS</span><span>DevTools</span>
+            </div>
+          </article>
+
+          <article class="skill-card" data-reveal>
+            <span class="skill-icon"><svg class="icon"><use href="#i-spark"/></svg></span>
+            <h3>Workflow</h3>
+            <p>How I move from a rough idea to a tested, deployed build.</p>
+            <div class="tags">
+              <span>AI-assisted dev</span><span>Debugging</span><span>Testing</span>
+              <span>Deployment</span><span>Documentation</span><span>Problem solving</span>
+            </div>
+          </article>
+        </div>
+
+        <div class="process">
+          <div class="process-step" data-reveal>
+            <span class="step-num">01</span>
+            <h4>Plan the flow</h4>
+            <p>Sketch the screens, map the data, and decide what the app actually needs before writing code.</p>
+          </div>
+          <div class="process-step" data-reveal>
+            <span class="step-num">02</span>
+            <h4>Build end to end</h4>
+            <p>Flutter UI, Express routes, Mongo models, and the realtime layer — wired together and tested.</p>
+          </div>
+          <div class="process-step" data-reveal>
+            <span class="step-num">03</span>
+            <h4>Debug &amp; ship</h4>
+            <p>Chase the edge cases, tighten the UI, and get it in front of real users.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= CONTACT ================= -->
+    <section class="section contact-section" id="contact" aria-labelledby="contact-title">
+      <div class="container">
+        <div class="contact-card" data-reveal>
+          <div class="contact-main">
+            <p class="eyebrow">Contact</p>
+            <h2 id="contact-title">Let's build something <span class="grad">useful</span>.</h2>
+            <p>
+              I'm open to junior full-stack and mobile developer roles, IT support
+              positions, freelance work, and collaborations. Whether you have a project in
+              mind or a bug that refuses to die — my inbox is open.
+            </p>
+
+            <div class="contact-actions">
+              <a class="btn btn-primary" href="mailto:cabantogrichiemel@gmail.com?subject=Hi%20Richiemel%20—%20let's%20work%20together">
+                <svg class="icon"><use href="#i-mail"/></svg> Email me
+              </a>
+              <button class="btn btn-ghost" type="button" data-copy="cabantogrichiemel@gmail.com">
+                <svg class="icon"><use href="#i-copy"/></svg> Copy email
+              </button>
+            </div>
+
+            <p class="contact-note">
+              <span class="dot-live" aria-hidden="true"></span>
+              Muntinlupa City, PH · open to remote work
+            </p>
+          </div>
+
+          <ul class="contact-links">
+            <li>
+              <a href="https://github.com/richiemelcabantog22" target="_blank" rel="noopener">
+                <span class="cl-left"><svg class="icon"><use href="#i-github"/></svg> GitHub</span>
+                <span class="cl-right">@richiemelcabantog22 <svg class="icon"><use href="#i-arrow"/></svg></span>
+              </a>
+            </li>
+            <li>
+              <a href="https://www.youtube.com/@chieCode" target="_blank" rel="noopener">
+                <span class="cl-left"><svg class="icon"><use href="#i-youtube"/></svg> YouTube</span>
+                <span class="cl-right">@chieCode <svg class="icon"><use href="#i-arrow"/></svg></span>
+              </a>
+            </li>
+            <li>
+              <a href="mailto:cabantogrichiemel@gmail.com">
+                <span class="cl-left"><svg class="icon"><use href="#i-mail"/></svg> Email</span>
+                <span class="cl-right">cabantogrichiemel@gmail.com <svg class="icon"><use href="#i-arrow"/></svg></span>
+              </a>
+            </li>
+            <li>
+              <span class="cl-static">
+                <span class="cl-left"><svg class="icon"><use href="#i-pin"/></svg> Location</span>
+                <span class="cl-right">Muntinlupa City, PH</span>
+              </span>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <p>© <span id="year">2026</span> Richiemel Cabantog. Built from scratch with HTML, CSS &amp; vanilla JS.</p>
+      <nav class="footer-links" aria-label="Footer links">
+        <a href="https://github.com/richiemelcabantog22" target="_blank" rel="noopener">GitHub</a>
+        <a href="https://www.youtube.com/@chieCode" target="_blank" rel="noopener">YouTube</a>
+        <a href="mailto:cabantogrichiemel@gmail.com">Email</a>
+      </nav>
     </div>
-</div>
+  </footer>
+
+  <button class="to-top" type="button" aria-label="Back to top">
+    <svg class="icon"><use href="#i-arrow-down"/></svg>
+  </button>
+
+  <div class="toast" role="status" aria-live="polite"></div>
+
+  <dialog class="lightbox" id="lightbox" aria-label="Screenshot preview">
+    <div class="lightbox-inner">
+      <button class="lightbox-close" type="button" aria-label="Close screenshot preview">
+        <svg class="icon"><use href="#i-x"/></svg>
+      </button>
+      <img src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" alt="" width="720" height="1495" />
+      <p class="lightbox-caption"></p>
+    </div>
+  </dialog>
+
+  <script src="assets/js/main.js" defer></script>
+</body>
+</html>

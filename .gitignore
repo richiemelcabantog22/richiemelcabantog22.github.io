@@ -1,0 +1,9 @@
+# Raw screenshot uploads (optimized copies live in assets/img/projects)
+/Driver Safety/
+/Pamana/
+/Portal/
+
+# OS junk
+Thumbs.db
+.DS_Store
+desktop.ini

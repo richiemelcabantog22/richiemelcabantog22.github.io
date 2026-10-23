@@ -1,0 +1,114 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1280 720" role="img" aria-label="TransTrack demo cover artwork">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#070c18"/>
+      <stop offset="0.55" stop-color="#080b15"/>
+      <stop offset="1" stop-color="#0d0a1c"/>
+    </linearGradient>
+    <linearGradient id="ink" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#e9edf9"/>
+      <stop offset="0.7" stop-color="#c9e8ff"/>
+      <stop offset="1" stop-color="#a78bfa"/>
+    </linearGradient>
+    <linearGradient id="route" x1="0" y1="1" x2="1" y2="0">
+      <stop offset="0" stop-color="#7dd3fc"/>
+      <stop offset="1" stop-color="#a78bfa"/>
+    </linearGradient>
+    <linearGradient id="screen" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#0e1729"/>
+      <stop offset="1" stop-color="#080d19"/>
+    </linearGradient>
+    <radialGradient id="glowA" cx="50%" cy="50%" r="50%">
+      <stop offset="0" stop-color="#38bdf8" stop-opacity="0.55"/>
+      <stop offset="1" stop-color="#38bdf8" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="glowB" cx="50%" cy="50%" r="50%">
+      <stop offset="0" stop-color="#a78bfa" stop-opacity="0.5"/>
+      <stop offset="1" stop-color="#a78bfa" stop-opacity="0"/>
+    </radialGradient>
+    <pattern id="grid" width="48" height="48" patternUnits="userSpaceOnUse">
+      <path d="M48 0H0v48" fill="none" stroke="#7dd3fc" stroke-opacity="0.05" stroke-width="1"/>
+    </pattern>
+    <filter id="blur" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur stdDeviation="60"/>
+    </filter>
+    <filter id="softGlow" x="-60%" y="-60%" width="220%" height="220%">
+      <feGaussianBlur stdDeviation="14"/>
+    </filter>
+  </defs>
+
+  <rect width="1280" height="720" fill="url(#bg)"/>
+  <rect width="1280" height="720" fill="url(#grid)"/>
+  <circle cx="1100" cy="120" r="300" fill="url(#glowB)" filter="url(#blur)"/>
+  <circle cx="220" cy="600" r="300" fill="url(#glowA)" filter="url(#blur)"/>
+
+  <!-- route line -->
+  <path d="M-40 560C220 560 300 300 560 330s330 210 620 40" fill="none" stroke="url(#route)" stroke-opacity="0.28" stroke-width="2" stroke-dasharray="10 14"/>
+  <circle cx="560" cy="330" r="6" fill="#7dd3fc" fill-opacity="0.8"/>
+
+  <!-- left copy -->
+  <text x="80" y="190" fill="#7dd3fc" font-family="'Segoe UI', Arial, sans-serif" font-size="15" letter-spacing="5">FLAGSHIP PROJECT · DEMO</text>
+  <text x="80" y="302" fill="url(#ink)" font-family="'Segoe UI', Arial, sans-serif" font-size="76" font-weight="700" letter-spacing="-3">TransTrack<tspan fill="#7dd3fc">.</tspan></text>
+  <text x="80" y="352" fill="#a9b8d0" font-family="'Segoe UI', Arial, sans-serif" font-size="21" letter-spacing="0.4">AI-driven smart public transport tracker</text>
+
+  <g font-family="'Segoe UI', Arial, sans-serif" font-size="14">
+    <rect x="80" y="400" width="120" height="36" rx="18" fill="#7dd3fc" fill-opacity="0.1" stroke="#7dd3fc" stroke-opacity="0.35"/>
+    <text x="140" y="423" text-anchor="middle" fill="#bfe9ff">Live GPS</text>
+    <rect x="212" y="400" width="160" height="36" rx="18" fill="#a78bfa" fill-opacity="0.1" stroke="#a78bfa" stroke-opacity="0.35"/>
+    <text x="292" y="423" text-anchor="middle" fill="#ddd0ff">Crowd density</text>
+    <rect x="384" y="400" width="128" height="36" rx="18" fill="#34d399" fill-opacity="0.09" stroke="#34d399" stroke-opacity="0.3"/>
+    <text x="448" y="423" text-anchor="middle" fill="#a7f3d0">AI insights</text>
+  </g>
+
+  <text x="80" y="506" fill="#7889a5" font-family="'Segoe UI', Arial, sans-serif" font-size="14" letter-spacing="1">VTX TERMINAL EXCHANGE · ALABANG</text>
+
+  <g opacity="0.85">
+    <rect x="80" y="540" width="52" height="2" rx="1" fill="#7dd3fc" fill-opacity="0.5"/>
+    <rect x="140" y="540" width="18" height="2" rx="1" fill="#a78bfa" fill-opacity="0.5"/>
+    <rect x="166" y="540" width="8" height="2" rx="1" fill="#f0abfc" fill-opacity="0.5"/>
+  </g>
+  <text x="80" y="580" fill="#5d6b85" font-family="'Segoe UI', Arial, sans-serif" font-size="12" letter-spacing="3">REAL BUILD · RECORDED DEMO</text>
+
+  <!-- phone -->
+  <g>
+    <rect x="912" y="96" width="286" height="528" rx="42" fill="#05080f" stroke="#7dd3fc" stroke-opacity="0.28" stroke-width="2"/>
+    <rect x="922" y="106" width="266" height="508" rx="34" fill="url(#screen)"/>
+    <rect x="1006" y="118" width="98" height="20" rx="10" fill="#03050b"/>
+
+    <!-- status -->
+    <text x="946" y="134" fill="#74849e" font-family="'Segoe UI', Arial, sans-serif" font-size="10">9:41</text>
+
+    <!-- map -->
+    <path d="M950 560C990 470 1010 400 1062 380s70-60 70-116" fill="none" stroke="url(#route)" stroke-width="4" stroke-linecap="round"/>
+    <path d="M950 560C1000 520 1040 520 1080 480" fill="none" stroke="#7dd3fc" stroke-opacity="0.18" stroke-width="10" stroke-linecap="round"/>
+    <g fill="#0b1424" stroke="#7dd3fc" stroke-width="2">
+      <circle cx="950" cy="560" r="6"/>
+      <circle cx="1022" cy="430" r="6"/>
+      <circle cx="1132" cy="264" r="6"/>
+    </g>
+    <circle cx="1062" cy="380" r="16" fill="#7dd3fc" fill-opacity="0.2" filter="url(#softGlow)"/>
+    <circle cx="1062" cy="380" r="8" fill="#7dd3fc"/>
+    <circle cx="1062" cy="380" r="15" fill="none" stroke="#7dd3fc" stroke-opacity="0.45"/>
+
+    <!-- route pill -->
+    <rect x="938" y="160" width="234" height="48" rx="14" fill="#0a1322" stroke="#7dd3fc" stroke-opacity="0.2"/>
+    <text x="954" y="181" fill="#7dd3fc" font-family="'Segoe UI', Arial, sans-serif" font-size="11" letter-spacing="2">ROUTE B-12</text>
+    <text x="954" y="198" fill="#dbe7f7" font-family="'Segoe UI', Arial, sans-serif" font-size="13">Alabang → VTX Terminal</text>
+
+    <!-- bottom card -->
+    <rect x="938" y="480" width="234" height="112" rx="16" fill="#0a1322" stroke="#ffffff" stroke-opacity="0.08"/>
+    <text x="954" y="504" fill="#7889a5" font-family="'Segoe UI', Arial, sans-serif" font-size="10" letter-spacing="1.5">NEXT ARRIVAL</text>
+    <text x="954" y="534" fill="#e9edf9" font-family="'Segoe UI', Arial, sans-serif" font-size="26" font-weight="700">4 min</text>
+    <text x="1046" y="532" fill="#34d399" font-family="'Segoe UI', Arial, sans-serif" font-size="11">● Live</text>
+
+    <text x="954" y="556" fill="#7889a5" font-family="'Segoe UI', Arial, sans-serif" font-size="10" letter-spacing="1.5">CROWD</text>
+    <rect x="954" y="564" width="52" height="6" rx="3" fill="#34d399"/>
+    <rect x="1010" y="564" width="52" height="6" rx="3" fill="#34d399" fill-opacity="0.55"/>
+    <rect x="1066" y="564" width="52" height="6" rx="3" fill="#34d399" fill-opacity="0.2"/>
+    <rect x="1122" y="564" width="34" height="6" rx="3" fill="#34d399" fill-opacity="0.12"/>
+  </g>
+
+  <!-- corner accents -->
+  <path d="M64 88V64h24" fill="none" stroke="#7dd3fc" stroke-opacity="0.35" stroke-width="2"/>
+  <path d="M1216 632v24h-24" fill="none" stroke="#a78bfa" stroke-opacity="0.35" stroke-width="2"/>
+</svg>
